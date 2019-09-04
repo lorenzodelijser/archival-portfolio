@@ -1,0 +1,568 @@
+/* font-faces */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* global */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFDB84;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin-top-index {
+  margin-top: 30vh;
+}
+
+.margin-top-app{
+  margin-top: 17.5vh;
+}
+
+
+/* text */
+
+.text-wrapper {
+  max-width: 500px;
+  color: #040119;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.text-wrapper h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 3.2em;
+  margin: 0px 0px 10px 0px;
+  letter-spacing: -0.01em;
+}
+
+.text-wrapper h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  margin: 0px 0px 10px 0px;
+}
+
+.text-wrapper p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+}
+
+
+/* introduction */
+
+#login-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 25vh auto 25px auto;
+}
+
+#start-button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  background-color: #A69BFC;
+  color: white;
+  width: 150px;
+  height: 45px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  box-shadow: 0px 10px 25px -15px #9082FB;
+}
+
+#start-button:hover {
+  background-color: #BCB4FD;
+  box-shadow: none;
+}
+
+#start-button:active {
+  background-color: #9082FB;
+}
+
+
+/* menubar */
+
+#menubar {
+  position: fixed;
+  right: 17px;
+  top: 10px;
+  font-family: 'Open Sans';
+  font-size: 0.8em;
+}
+
+#menubar a {
+  color: #1C2333;
+  transition: 0.2s;
+}
+
+#menubar a:hover {
+  color: #BCB4FD;
+}
+
+#menubar a:active {
+  color: #9082FB;
+}
+
+#menubar li {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 1.5em;
+}
+
+
+/* donutlist */
+
+#donutlist {
+  height: 500px;
+  background-color: white;
+  overflow: scroll;
+  flex-flow: column;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px -10px #FFCC51;
+}
+
+.donutlist-item {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  color: black;
+  padding: 0px 0px 0px 45px;
+  background-image: url("/img/favicon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+.donutlist-item p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+.donutlist-item:hover {
+  background-color: #F0F0F0;
+}
+
+.icon-donut {
+  background-image: url("../img/donut.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+.icon-cupcake {
+  background-image: url("../img/cupcake.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+
+/* playlist */
+
+#playlist {
+  background-color: white;
+  height: 500px;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: 200px;
+  box-shadow: 0px 10px 20px -10px #FFCC51;
+}
+
+#playlist p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#playlist-top {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid #F3F3F3 1px;
+  padding: 5px 20px 5px 45px;
+}
+
+#playlist-top p {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+#clock {
+  margin-left: auto;
+  padding-top: 12.5px;
+}
+
+#playlist-wrapper {
+  height: 450px;
+  overflow: scroll;
+}
+
+#playlist-wrapper a {
+  color: black;
+}
+
+.song-wrapper {
+  height: 50px;
+  padding: 15px 20px 0px 45px;
+  border-bottom: solid #F3F3F3 1px;
+}
+
+.song-wrapper:hover {
+  background-color: #F0F0F0;
+  background-image: url("../img/playbutton.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+.song-title {
+  margin: 0px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.song-artist {
+  margin: 0px;
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.5em;
+}
+
+.duration {
+  position: relative;
+  font-size: 0.8em;
+  text-align: end;
+  top: -35px;
+}
+
+/* uitleg */
+
+.uitleg-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: 0px 10px 20px -10px #FFCC51;
+}
+
+.uitleg-wrapper h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0px 0px 10px 0px;
+}
+
+.uitleg-wrapper p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.5em;
+}
+
+.uitleg-box {
+  max-width: 300px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+
+/* flying donut */
+
+#flying-donut {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  opacity: 0.25;
+  z-index: -5;
+  top: 25vh;
+  left: 25vw;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: donut;
+}
+
+@keyframes donut {
+  0% {
+    transform: rotate(0deg);
+    margin-top: 0px;
+  }
+
+  50%{
+    margin-top: 50px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    margin-top: 0px;
+  }
+}
+
+
+/* flying cupcake */
+
+#flying-cupcake {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  opacity: 0.25;
+  z-index: -5;
+  top: 60vh;
+  left: 60vw;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: cupcake;
+}
+
+@keyframes cupcake {
+  0% {
+    transform: rotate(-24deg);
+    margin-top: 0px;
+  }
+
+  50%{
+    transform: rotate(32deg);
+    margin-top: 10px;
+  }
+
+  100% {
+    transform: rotate(-24deg);
+    margin-top: 0px;
+  }
+}
+
+
+/* flying discoball */
+
+#flying-discoball {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  opacity: 0.25;
+  z-index: -5;
+  top: 115vh;
+  left: 24vw;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: disco;
+}
+
+@keyframes disco {
+  0% {
+    transform: rotate(20deg);
+    margin-top: 0px;
+  }
+
+  50%{
+    transform: rotate(9deg);
+    margin-top: 5px;
+  }
+
+  100% {
+    transform: rotate(20deg);
+    margin-top: 0px;
+  }
+}
+
+
+/* flying microphone */
+
+#flying-microphone {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  opacity: 0.25;
+  z-index: -5;
+  top: 135vh;
+  left: 60vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: mic;
+}
+
+@keyframes mic {
+  0% {
+    margin-top: 0px;
+  }
+
+  50%{
+    margin-top: 60px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+
+/*
+  Low Resolution Tablets, Mobiles (Landscape)
+  481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .margin-top-index {
+    margin-top: 10vh;
+  }
+
+  .text-wrapper h1 {
+    font-size: 2.5em;
+  }
+
+  .uitleg-wrapper {
+    flex-direction: column;
+  }
+
+  #flying-donut {
+    display: none;
+  }
+
+  #flying-cupcake {
+    display: none;
+  }
+
+  #flying-discoball {
+    display: none;
+  }
+
+  #flying-microphone {
+    display: none;
+  }
+}
+
+/*
+  Most of the Smartphones Mobiles (Portrait)
+  320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .margin-top-index {
+    margin-top: 50px;
+  }
+
+  .margin-top-app{
+    margin-top: 50px;
+  }
+
+  .text-wrapper {
+    width: auto;
+    padding: 25px;
+  }
+
+  .text-wrapper h1 {
+    font-size: 1.8em;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .text-wrapper h2 {
+    font-size: 0.9em;
+  }
+
+  #start-button {
+    margin-bottom: 100px;
+    box-shadow: 0px 10px 25px -15px #9082FB;
+  }
+
+  #donutlist {
+    height: 55vh;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  #playlist {
+    height: 55vh;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 100px;
+  }
+
+  .uitleg-wrapper {
+    flex-direction: column;
+  }
+
+  #flying-donut {
+    display: none;
+  }
+
+  #flying-cupcake {
+    display: none;
+  }
+
+  #flying-discoball {
+    display: none;
+  }
+
+  #flying-microphone {
+    display: none;
+  }
+}
