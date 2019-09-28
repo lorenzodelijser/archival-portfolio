@@ -1,16 +1,17 @@
 {
-    "name": "Portfolio Lorenzo de Lijser",
-    "short_name": "Portfolio",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#FFFFFF",
-    "icons": [{
-          "src": "./img/icon-192.png",
-          "sizes": "192x192"
-       },
-       {
-          "src": "./img/icon-512.png",
-          "sizes": "512x512"
-       }
-    ]
- }
+  "name": "Portfolio Lorenzo de Lijser",
+  "short_name": "Portfolio",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "./img/icon-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./img/icon-512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
